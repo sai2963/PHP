@@ -164,7 +164,7 @@
     sayHi($_POST["name"]);
     echo "<br>";
 ?>
-//return statement
+<!-- return statement -->
 <?php
 function cube($num)
 {
@@ -174,6 +174,41 @@ $result=cube(4);
 echo $result;
 echo "<br>";
 ?>
+<!-- if statement -->
 
+<?php
+$isFemale=false;
+$isShort=false;
+if($isFemale && $isShort){
+    echo "You are a Female and you areshort";
+}
+elseif($isFemale && !$isShort){
+    echo "You are a female but not short";
+}
+elseif(!$isFemale && $isShort){
+    echo "You are not Female but you are short";
+}
+else {
+    echo "You are a Male and you are Tall";
+}
+?>
+<br>
+<!-- if statement Comparision -->
+<?php
+function getMax($num1,$num2,$num3){
+    if($num1>$num2 && $num1>$num3){
+        return $num1;
+    }
+    elseif($num2>$num1 && $num2>$num3){
+        return $num2;
+    }
+    else{
+        return $num3;
+    }
+}
+$result=max(10,20,30);
+echo $result;
+echo "<br>";
+?>
 </body>
 </html>
