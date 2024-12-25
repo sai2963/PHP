@@ -87,23 +87,32 @@
         
 
     ?>
-        <form action="site.php" method="get">
+        <form action="site.php" method="post">
+            <h1>Register</h1>
             <label for="name">Name:</label>
             <input type="text" name="name" id="name" required>
             <br>
-            <label for="name">Phone :</label>
+            <label for="mob">Phone :</label>
             <input type="number" name="mob" id="mob" required>
+            <br>
+            <label for="Password">Password :</label>
+            <input type="password" name="Password" id="Password" required>
             <br>
             <button type="submit">Submit</button>
         </form>
         <br>
         <?php
-            echo  $_GET["name"];
+            echo  $_POST["name"];
             echo "<br>";
             
         ?>
         <?php
-            echo  $_GET["mob"];
+            echo  $_POST["mob"];
+            echo "<br>";
+            
+        ?>
+        <?php
+            echo  $_POST["Password"];
             echo "<br>";
             
         ?>
