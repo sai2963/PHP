@@ -7,6 +7,7 @@
 </head>
 <body>
     <?php
+        //variables
         $CharName = "DDK";
         $CharAge = 20;
         echo "<h1>name : $CharName</h1>";
@@ -15,12 +16,33 @@
         $CharAge = 21;
         echo "<h1>name : $CharName</h1>";
         echo "<h1>age : $CharAge</h1>";
-
+        //data types
         $Name= "Duduka";
         $Age=21;
         $gpa=8.7;
         $isMale=true;
-        echo $Name
+        echo $Name;  
+        echo "<br>"; 
+        //Strings
+        $phrase="Giraffe Academy"; 
+        
+        echo strtoupper($phrase);
+        echo "<br>";
+        echo strtolower($phrase);
+        echo "<br>";
+        echo strlen($phrase);
+        echo "<br>";
+        echo $phrase[0];
+        echo "<br>";
+        $phrase[0]= "B";
+        echo $phrase;
+        echo "<br>";
+        echo str_replace("Biraffe","Panda",$phrase);
+        echo "<br>";
+        echo metaphone($phrase);
+        echo "<br>";
+        echo substr($phrase,8,4);
+
 
     ?>
 </body>
