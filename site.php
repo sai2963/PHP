@@ -42,6 +42,8 @@
         echo metaphone($phrase);
         echo "<br>";
         echo substr($phrase,8,4);
+        echo "<br>";
+        echo substr($phrase,8);
 
 
     ?>
