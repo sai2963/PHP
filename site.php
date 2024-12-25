@@ -116,5 +116,10 @@
             echo "<br>";
             
         ?>
+        <?php
+        $Friends=array("Kevin","Karen","Oscar","Jim");
+        $Friends[1]="Dwight";
+        echo $Friends[1];
+        ?>
 </body>
 </html>
