@@ -135,5 +135,45 @@
     $fruits = $_POST["fruits"];
     echo $fruits[0];
     ?>
+    <br>
+    //associative arrays
+    <form action="site.php" method="post">
+        Student Name :<input type="text" name="student">
+        <button type="submit">Submit</button>
+    </form>
+    <br>
+    <?php
+    $grades = array("Jim" => "A+", "Pam" => "B-", "Oscar" => "C+");
+    echo $grades[$_POST["student"]];
+    ?>
+    <br>
+    //functions
 
+    
+    <form action="site.php" method="post">
+       Your  Name <input type="text" name="name">
+        <br>
+        
+        <button  type="submit">Submit</button>
+    </form>
+    <?php
+    function sayHi($name)
+    {
+        echo "Hello $name";
+    }
+    sayHi($_POST["name"]);
+    echo "<br>";
+?>
+//return statement
+<?php
+function cube($num)
+{
+    return $num * $num * $num;
+}
+$result=cube(4);
+echo $result;
+echo "<br>";
+?>
+
+</body>
 </html>
