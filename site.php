@@ -15,6 +15,13 @@
         $CharAge = 21;
         echo "<h1>name : $CharName</h1>";
         echo "<h1>age : $CharAge</h1>";
+
+        $Name= "Duduka";
+        $Age=21;
+        $gpa=8.7;
+        $isMale=true;
+        echo $Name
+
     ?>
 </body>
 </html>
