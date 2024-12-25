@@ -83,6 +83,29 @@
         echo "<br>";
         echo floor(8.7);
 
+        // Getting user input
+        
+
     ?>
+        <form action="site.php" method="get">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required>
+            <br>
+            <label for="name">Phone :</label>
+            <input type="number" name="mob" id="mob" required>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+        <br>
+        <?php
+            echo  $_GET["name"];
+            echo "<br>";
+            
+        ?>
+        <?php
+            echo  $_GET["mob"];
+            echo "<br>";
+            
+        ?>
 </body>
 </html>
