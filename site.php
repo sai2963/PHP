@@ -348,5 +348,37 @@ echo "<br>";
       echo $avengers->getRating();
       echo "<hr>";
     ?>
+    <br>
+    <!-- Inheritance -->
+  <?php
+    class Chef {
+      function makeChicken() {
+        echo "The chef makes chicken <br>";
+      }
+      function makeSalad() {
+        echo "The chef makes salad <br>";
+      }
+      function makeSpecialDish() {
+        echo "The chef makes bbq ribs <br>";
+      }
+    }
+
+    class ItalianChef extends Chef {
+      function makePasta() {
+        echo "The Italian Chef makes pasta <br>";
+      }
+      function makeSpecialDish() {
+        echo "The Italian Chef makes chicken parmesian <br>";
+      }
+    }
+
+    $chef = new Chef();
+    $chef->makeSpecialDish();
+
+    $italianChef = new ItalianChef();
+    $italianChef->makeSpecialDish();
+    $italianChef->makeSalad();
+    $italianChef->makePasta();
+  ?>
 </body>
 </html>
