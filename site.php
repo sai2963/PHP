@@ -319,6 +319,34 @@ echo "<br>";
     // $student2->gpa = 2.5;
     echo $student2->hasHonors();
   ?>
+  <br>
+<!-- Getters and Setters -->
+<?php
+      class Movie {
+        public $title;
+        private $rating;
 
+        function __construct($title, $rating) {
+          $this->title = $title;
+          $this->setRating($rating);
+        }
+
+        function getRating() {
+          return $this->rating;
+        }
+
+        function setRating($rating) {
+          if ($rating == "G" || $rating == "PG" || $rating == "PG-13" || $rating == "R" || $rating == "NR") {
+            $this->rating = $rating;
+          } else {
+            $this->rating = "NR";
+          }
+        }
+      }
+      $avengers = new Movie("Avengers", "Dog");
+      // $avengers->setRating("Avengers - Level Threat");
+      echo $avengers->getRating();
+      echo "<hr>";
+    ?>
 </body>
 </html>
