@@ -210,5 +210,90 @@ $result=max(10,20,30);
 echo $result;
 echo "<br>";
 ?>
+ <hr>
+  <!-- While and Do-while Loops -->
+  <?php
+    $index = 6;
+    while($index <= 5) {
+      echo "$index <br>";
+      $index++;
+    }
+    
+    do {
+      echo "$index <br>";
+      $index++;
+    } while($index <= 5);
+    echo "<br>"
+  ?>
+  <hr>
+  <!-- For Loops -->
+  <?php
+    $index = 0;
+    $arr = array(4, 8, 16, 24, 32);
+    for($index /* or $i = 1 (initialize new variable) */; $index < count($arr); $index++) {
+      // echo "$index <br>";
+      echo "$arr[$index] <br>";
+    }
+  ?>
+  <!-- include Html -->
+   <?php
+     include"index.html";
+     ?>
+  <!-- include php -->
+   <?php
+     include"body.php";
+     ?>
+    <!-- classes and objects using constructor  -->
+    <?php
+    class Book {
+        var $title;
+        var $author;
+        var $pages;
+    
+    function __construct($atitle,$aauthor,$apages){
+        $this->title = $atitle;
+        $this->author = $aauthor;
+        $this->pages = $apages;
+
+    }
+}
+$book1 = new Book("Harry Potter","JK Rowling",400);
+$book2 = new Book("React","Anonymus",4000);
+echo $book1->title;
+echo "<br>";
+echo $book2->title;
+echo "<br>";
+echo $book1->author;
+echo "<br>";
+    
+echo $book2->author;
+echo "<br>";
+echo $book1->pages;
+echo "<br>";
+echo $book1->title;
+echo "<br>";
+
+echo $book2->title;
+echo "<br>";
+echo $book1->author;
+echo "<br>";
+
+
+echo $book2->author;    
+echo "<br>";
+echo $book1->pages;
+echo "<br>";
+
+
+
+
+    echo $book1->title;
+    echo "<br>";
+    echo $book2->title;                                                                     
+    echo "<br>";
+    
+
+    ?>
+
 </body>
 </html>
